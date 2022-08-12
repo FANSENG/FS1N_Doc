@@ -1,14 +1,14 @@
 
 <!DOCTYPE HTML>
-<html lang="" >
+<html lang="zh-hans" >
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Transformer · GitBook</title>
+        <title>Transformer · FS1N's Book</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
-        
+        <meta name="author" content="FS1N">
         
         
     
@@ -17,11 +17,15 @@
     
             
                 
-                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
                 
             
                 
-                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
                 
             
                 
@@ -32,16 +36,6 @@
 
     
 
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
     
         
     
@@ -71,7 +65,7 @@
         
             
 <div id="book-search-input" role="search">
-    <input type="text" placeholder="Type to search" />
+    <input type="text" placeholder="输入并搜索" />
 </div>
 
             
@@ -82,7 +76,16 @@
 <ul class="summary">
     
     
+    
+        
+        <li>
+            <a href="https://www.google.com" target="_blank" class="custom-link">谷歌</a>
+        </li>
+    
+    
 
+    
+    <li class="divider"></li>
     
 
     
@@ -307,7 +310,7 @@
 
     <li>
         <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-            Published with GitBook
+            本书使用 GitBook 发布
         </a>
     </li>
 </ul>
@@ -357,9 +360,9 @@
 <li><p>LayerNormal: &#x5C06;&#x6BCF;&#x4E00;&#x4E2A;&#x6837;&#x672C;&#x6807;&#x51C6;&#x5316;&#x4E3A; &#x5747;&#x503C;&#x4E3A;$\lambda$, &#x65B9;&#x5DEE;&#x4E3A;$\beta$ &#x7684;&#x5206;&#x5E03;&#xFF0C;&#x53EA;&#x8003;&#x5BDF;&#x6837;&#x672C;&#x7684;&#x5747;&#x503C;&#x548C;&#x65B9;&#x5DEE;&#xFF0C;&#x4E0D;&#x53BB;&#x770B;&#x5168;&#x5C40;&#x7684;&#x5747;&#x503C;&#x65B9;&#x5DEE;&#xFF08;&#x4E0D;&#x8DE8;&#x6837;&#x672C;&#xFF09;&#xFF0C;&#x56E0;&#x4E3A;&#x6BCF;&#x4E2A;Seq&#x4E2D;&#x7684;token&#x6570;&#x91CF;&#x4E0D;&#x76F8;&#x540C;&#x3002;</p>
 </li>
 <li><p>&#x4E3A;&#x4EC0;&#x4E48;Attention&#x516C;&#x5F0F;&#xFF08;&#x5982;&#x4E0B;&#xFF09;&#x4E2D;&#x8981;&#x9664;&#x4EE5;$\sqrt{d_k}$&#xFF1A;&#x5F53;$d_k$&#x7684;&#x503C;&#x5F88;&#x5927;&#x65F6;&#xFF0C;$QK^T$&#x4E2D;&#x503C;&#x7684;&#x5DEE;&#x8DDD;&#x53EF;&#x80FD;&#x8F83;&#x5927;&#xFF0C;$softmax$&#x540E;&#x6743;&#x503C;&#x4F1A;&#x66F4;&#x8D8B;&#x8FD1;&#x4E8E;0&#x548C;1&#xFF0C;&#x4E4B;&#x540E;&#x6C42;&#x5BFC;&#x65F6;&#x4F1A;&#x51FA;&#x73B0;&#x68AF;&#x5EA6;&#x5DEE;&#x5F02;&#x8FC7;&#x5927;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x4F1A;&#x51FA;&#x73B0;&#x6536;&#x655B;&#x56F0;&#x96BE;&#x7684;&#x95EE;&#x9898;&#x3002;&#x6781;&#x5927;&#x7684;&#x70B9;&#x79EF;&#x503C;&#x4F1A;&#x5C06;&#x6574;&#x4E2A;$softmax$&#x63A8;&#x5411;&#x68AF;&#x5EA6;&#x5E73;&#x7F13;&#x533A;&#xFF0C;&#x4F7F;&#x5F97;&#x6536;&#x655B;&#x56F0;&#x96BE;&#xFF0C;&#x6240;&#x4EE5;&#x9700;&#x8981;scaled&#x3002;Add &#x662F;&#x5929;&#x7136;&#x5730;&#x4E0D;&#x9700;&#x8981; scaled&#xFF0C;Mul &#x5728;$d_k$&#x8F83;&#x5927;&#x7684;&#x65F6;&#x5019;&#x5FC5;&#x987B;&#x8981;&#x505A; scaled&#x3002;
-$$
+<script type="math/tex; mode=display">
 Attention(Q, K, V)=softmax(\frac{QK^T}{\sqrt{d_k}})V
-$$</p>
+</script></p>
 </li>
 <li><p>Multi-Head&#x662F;&#x5C06;Q&#x3001;K&#x3001;V&#x901A;&#x8FC7;&#x7EBF;&#x6027;&#x5C42;&#x6295;&#x5F71;&#x5230;&#x4E86;&#x4F4E;&#x7EAC;&#x5EA6;($\frac{d_k}{h}$)&#xFF0C;&#x7136;&#x540E;&#x901A;&#x8FC7;h&#x4E2A;<code>Scaled Dot-Product Attention</code>&#x5F97;&#x5230;h&#x4E2A;&#x957F;&#x5EA6;&#x4E3A;$\frac{d_k}{h}$&#x7684;&#x5411;&#x91CF;&#xFF0C;&#x5C06;h&#x4E2A;&#x5411;&#x91CF;&#x8FDB;&#x884C;&#x8FDE;&#x63A5;&#xFF0C;&#x5F97;&#x5230;&#x7684;&#x4FBF;&#x662F;&#x6CE8;&#x610F;&#x529B;&#x6743;&#x91CD;&#x3002;&#x6CE8;&#xFF1A;&#x5176;&#x4E2D;&#x7528;&#x6765;&#x6295;&#x5F71;&#x7684;&#x7EBF;&#x6027;&#x5C42;&#x53C2;&#x6570;&#x662F;&#x53EF;&#x4EE5;&#x5B66;&#x4E60;&#x7684;&#x3002;&#xFF08;&#x7C7B;&#x4F3C;&#x5377;&#x79EF;&#x4E2D;&#x7684;&#x591A;&#x4E2A;filter&#xFF09;</p>
 </li>
@@ -367,9 +370,9 @@ $$</p>
 <li>&#x4E3A;&#x4EC0;&#x4E48;Positional Encoding&#x76F4;&#x63A5;&#x76F8;&#x52A0;&#x800C;&#x4E0D;&#x662F;Concat&#xFF1A;&#x5728;&#x539F;&#x59CB;&#x5411;&#x91CF;&#x4E0A;concat&#x4E00;&#x4E2A;&#x4EE3;&#x8868;&#x4F4D;&#x7F6E;&#x4FE1;&#x606F;&#x7684;&#x5411;&#x91CF;&#xFF0C;&#x518D;&#x7ECF;&#x8FC7;&#x53D8;&#x6362;&#xFF0C;&#x6700;&#x7EC8;&#x7684;&#x6548;&#x679C;&#x7B49;&#x4EF7;&#x4E8E;&#xFF1A;&#x5148;&#x5BF9;&#x539F;&#x59CB;&#x8F93;&#x5165;&#x5411;&#x91CF;&#x505A;&#x53D8;&#x6362;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x52A0;&#x4E0A;&#x4F4D;&#x7F6E;&#x5D4C;&#x5165;&#x3002;&#x53E6;&#x4E00;&#x65B9;&#x9762;&#xFF0C;concat&#x4F1A;&#x4F7F;&#x7F51;&#x7EDC;&#x8FDB;&#x5165;&#x6DF1;&#x5C42;&#x4E4B;&#x540E;&#x53C2;&#x6570;&#x91CF;&#x5267;&#x589E;&#xFF0C;&#x8FD9;&#x662F;&#x5F88;&#x4E0D;&#x5212;&#x7B97;&#x7684;&#x3002;</li>
 <li>Transformer&#x5B66;&#x4E60;&#x7387;&#x65B9;&#x6848;&#x4E3A;Warm up&#xFF0C;&#x8BA1;&#x7B97;&#x516C;&#x5F0F;&#x5982;&#x4E0B;&#xFF08;$warmup_steps$&#x8BBE;&#x7F6E;&#x4E3A;4000&#xFF09;&#xFF0C;&#x5B66;&#x4E60;&#x7387;&#xFF0C;Warm up&#x4F1A;&#x628A;Learning Rate&#x4ECE;&#x5C0F;&#x53D8;&#x5927;&#x7136;&#x540E;&#x518D;&#x7EBF;&#x6027;&#x51CF;&#x5C0F;&#x3002;&#x4F18;&#x5316;&#x5668;&#x4F7F;&#x7528;Adam&#xFF0C;&#x5176;&#x4E2D;$\beta_1$&#x4E3A;0.9&#xFF0C;$\beta_2$&#x4E3A;0.98&#x3002;</li>
 </ul>
-<p>$$
-lrate=d_{model}^{-0.5}&#xB7;min(step_num^{-0.5}, step_num&#xB7;warmup_steps^{-1.5})</p>
-<p>$$</p>
+<p><script type="math/tex; mode=display">
+lrate=d_{model}^{-0.5}·min(step\_num^{-0.5}, step\_num·warmup\_steps^{-1.5})
+</script></p>
 <hr>
 <h2 id="&#x53C2;&#x8003;">&#x53C2;&#x8003;</h2>
 <ol>
@@ -432,7 +435,7 @@ lrate=d_{model}^{-0.5}&#xB7;min(step_num^{-0.5}, step_num&#xB7;warmup_steps^{-1.
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Transformer","level":"1.3.2.1","depth":3,"next":{"title":"训练技巧","level":"1.3.3","depth":2,"path":"深度学习/训练技巧/README.md","ref":"深度学习/训练技巧/README.md","articles":[{"title":"K-fold","level":"1.3.3.1","depth":3,"path":"深度学习/训练技巧/K-fold.md","ref":"深度学习/训练技巧/K-fold.md","articles":[]}]},"previous":{"title":"基础模型","level":"1.3.2","depth":2,"path":"深度学习/基础模型/README.md","ref":"深度学习/基础模型/README.md","articles":[{"title":"Transformer","level":"1.3.2.1","depth":3,"path":"深度学习/基础模型/Transformer.md","ref":"深度学习/基础模型/Transformer.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"深度学习/基础模型/Transformer.md","mtime":"2022-07-01T07:44:04.161Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-08-12T14:27:43.285Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Transformer","level":"1.3.2.1","depth":3,"next":{"title":"训练技巧","level":"1.3.3","depth":2,"path":"深度学习/训练技巧/README.md","ref":"深度学习/训练技巧/README.md","articles":[{"title":"K-fold","level":"1.3.3.1","depth":3,"path":"深度学习/训练技巧/K-fold.md","ref":"深度学习/训练技巧/K-fold.md","articles":[]}]},"previous":{"title":"基础模型","level":"1.3.2","depth":2,"path":"深度学习/基础模型/README.md","ref":"深度学习/基础模型/README.md","articles":[{"title":"Transformer","level":"1.3.2.1","depth":3,"path":"深度学习/基础模型/Transformer.md","ref":"深度学习/基础模型/Transformer.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["mathjax-pro","advanced-emoji","copy-code-button","github","-lunr","-search","search-pro"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"github":{"url":"https://github.com/FANSENG"},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mathjax-pro":{"forceSVG":false,"version":"2.7.7"},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"FS1N","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"FS1N's Book","language":"zh-hans","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null},"sidebar":{"谷歌":"https://www.google.com"}},"gitbook":"*","description":"This is record sharing by FS1N.","extension":null},"file":{"path":"深度学习/基础模型/Transformer.md","mtime":"2022-07-01T07:44:04.161Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-08-12T16:09:02.734Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -442,19 +445,27 @@ lrate=d_{model}^{-0.5}&#xB7;min(step_num^{-0.5}, step_num&#xB7;warmup_steps^{-1.
     <script src="../../gitbook/theme.js"></script>
     
         
-        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
         
     
         
-        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        <script src="../../gitbook/gitbook-plugin-mathjax-pro/plugin.js"></script>
         
     
         
-        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        <script src="../../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
         
     
         
-        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
         
     
         
