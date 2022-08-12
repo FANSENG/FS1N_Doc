@@ -1,0 +1,853 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>SkeletonAnomalyDetection2019 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../../深度学习/" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    PaperNotes
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    AnomalyDetection
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.2.1.1" data-path="SkeletonAnomalyDetection2019.html">
+            
+                <a href="SkeletonAnomalyDetection2019.html">
+            
+                    
+                    SkeletonAnomalyDetection2019
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../深度学习/">
+            
+                <a href="../../深度学习/">
+            
+                    
+                    深度学习
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../深度学习/Normalization/">
+            
+                <a href="../../深度学习/Normalization/">
+            
+                    
+                    Normalization
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="../../深度学习/Normalization/BatchNormalization.html">
+            
+                <a href="../../深度学习/Normalization/BatchNormalization.html">
+            
+                    
+                    BatchNormalization
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../深度学习/基础模型/">
+            
+                <a href="../../深度学习/基础模型/">
+            
+                    
+                    基础模型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="../../深度学习/基础模型/Transformer.html">
+            
+                <a href="../../深度学习/基础模型/Transformer.html">
+            
+                    
+                    Transformer
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../深度学习/训练技巧/">
+            
+                <a href="../../深度学习/训练技巧/">
+            
+                    
+                    训练技巧
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" data-path="../../深度学习/训练技巧/K-fold.html">
+            
+                <a href="../../深度学习/训练技巧/K-fold.html">
+            
+                    
+                    K-fold
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../数字图像处理/">
+            
+                <a href="../../数字图像处理/">
+            
+                    
+                    数字图像处理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../数字图像处理/图像增广.html">
+            
+                <a href="../../数字图像处理/图像增广.html">
+            
+                    
+                    图像增广
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >SkeletonAnomalyDetection2019</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="learning-regularity-in-skeleton-trajectories-for-anomaly-detection-in-videos">Learning Regularity in Skeleton Trajectories for Anomaly Detection in Videos</h1>
+<h2 id="metadata">Metadata</h2>
+<ul>
+<li><strong>CiteKey</strong>: SkeletonAnomalyDetection2019</li>
+<li><strong>Type</strong>: conferencePaper</li>
+<li><strong>Title</strong>: Learning Regularity in Skeleton Trajectories for Anomaly Detection in Videos</li>
+<li><strong>Author</strong>: Morais, Romero; Le, Vuong; Tran, Truyen; Saha, Budhaditya; Mansour, Moussa; Venkatesh, Svetha</li>
+<li><strong>Year</strong>: 2019</li>
+<li><strong>Journal</strong>: 2019 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</li>
+<li><strong>Pages</strong>: 11988-11996</li>
+<li><strong>Publisher</strong>: IEEE</li>
+<li><strong>DOI</strong>: 10/ghj5xf</li>
+</ul>
+<hr>
+<ul>
+<li><strong>Url</strong>: <a href="https://ieeexplore.ieee.org/document/8953884/" target="_blank">Open online</a></li>
+<li><strong>zotero entry</strong>: <a href="zotero://select/library/items/AKGNN9KM" target="_blank">Zotero</a></li>
+<li><strong>open pdf</strong>: <a href="file:///C:%5CUsers%5C15750%5CZotero%5Cstorage%5CJKUFYHM5%5CMorais%20%E7%AD%89%E3%80%82%20-%202019%20-%20Learning%20Regularity%20in%20Skeleton%20Trajectories%20for%20A.pdf" target="_blank">Morais &#x7B49;&#x3002; - 2019 - Learning Regularity in Skeleton Trajectories for A.pdf</a></li>
+<li><strong>Keywords</strong>: ObsCite</li>
+</ul>
+<hr>
+<h2 id="abstract">Abstract</h2>
+<blockquote>
+<p>Appearance features have been widely used in video anomaly detection even though they contain complex entangled factors. We propose a new method to model the normal patterns of human movements in surveillance video for anomaly detection using dynamic skeleton features. We decompose the skeletal movements into two sub-components: global body movement and local body posture. We model the dynamics and interaction of the coupled features in our novel Message-Passing Encoder-Decoder Recurrent Network. We observed that the decoupled features collaboratively interact in our spatio-temporal model to accurately identify human-related irregular events from surveillance video sequences. Compared to traditional appearancebased models, our method achieves superior outlier detection performance. Our model also offers &#x201C;open-box&#x201D; examination and decision explanation made possible by the semantically understandable features and a network architecture supporting interpretability.</p>
+<ul>
+<li>&#x6570;&#x636E;&#x6765;&#x81EA;&#x76D1;&#x63A7;&#x89C6;&#x9891;</li>
+<li>&#x5206;&#x89E3;&#x9AA8;&#x9ABC;&#x8FD0;&#x52A8;&#x4E3A;&#x4E24;&#x90E8;&#x5206;<ol>
+<li>&#x5168;&#x5C40;&#x8EAB;&#x4F53;&#x884C;&#x4E3A;</li>
+<li>&#x5C40;&#x90E8;&#x8EAB;&#x4F53;&#x59FF;&#x6001;</li>
+</ol>
+</li>
+<li>&#x4F7F;&#x7528;&#x4E0D;&#x540C;feature&#x4E4B;&#x95F4;&#x7684;&#x76F8;&#x4E92;&#x5173;&#x7CFB;&#xFF0C;&#x7528;&#x4E8E;&#x5BF9;&#x6B63;&#x5E38;&#x884C;&#x4E3A;&#x548C;&#x5F02;&#x5E38;&#x884C;&#x4E3A;&#x5EFA;&#x6A21;</li>
+<li>&#x5728;&#x65F6;&#x7A7A;&#x6A21;&#x578B;&#x4E2D;&#x4F7F;&#x7528;&#x89E3;&#x8026;&#x7279;&#x5F81;&#x95F4;&#x7684;&#x76F8;&#x4E92;&#x5173;&#x7CFB;&#x53EF;&#x4EE5;&#x6709;&#x6548;&#x7684;&#x63D0;&#x9AD8;&#x5BF9;&#x5F02;&#x5E38;&#x884C;&#x4E3A;&#x7684;&#x8BC6;&#x522B;</li>
+</ul>
+<hr>
+<h2 id="summary">Summary</h2>
+<ul>
+<li>&#x672C;&#x6587;&#x89E3;&#x51B3;&#x7684;&#x662F; &#x89C6;&#x9891;&#x5F02;&#x5E38;&#x68C0;&#x6D4B; &#x95EE;&#x9898;&#xFF0C;&#x5176;&#x8F93;&#x5165;&#x6570;&#x636E;&#x5E76;&#x4E0D;&#x662F;&#x76D1;&#x63A7;&#x89C6;&#x9891;&#xFF0C;&#x800C;&#x662F;&#x4ECE;&#x76D1;&#x63A7;&#x89C6;&#x9891;&#x4E2D;&#x63D0;&#x53D6;&#x5F97;&#x5230;&#x7684; &#x4EBA;&#x4F53;&#x9AA8;&#x9ABC;&#x68C0;&#x6D4B;&#x7ED3;&#x679C;&#xFF0C;&#x5177;&#x4F53;&#x5212;&#x5206;&#x4E3A;&#x4E24;&#x90E8;&#x5206;&#xFF0C;global &#x548C; local&#xFF0C;&#x5176;&#x4E2D; global &#x6307;&#x4EBA;&#x4F53;&#x4E2D;&#x5FC3;&#x5728;&#x6574;&#x4E2A;&#x56FE;&#x50CF;&#x4E2D;&#x7684;&#x4F4D;&#x7F6E;&#xFF0C; local &#x6307;&#x68C0;&#x6D4B;&#x5230;&#x7684;&#x5404;&#x4E2A;&#x5173;&#x8282;&#x70B9;&#x76F8;&#x5BF9;&#x4E8E;&#x4EBA;&#x4F53;&#x4E2D;&#x5FC3;&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;global &#x5BF9;&#x4F4D;&#x7F6E;&#x654F;&#x611F;&#x800C;&#x4E0D;&#x5BF9;&#x8EAB;&#x4F53;&#x5177;&#x4F53;&#x59FF;&#x6001;&#x654F;&#x611F;&#xFF0C; local &#x5BF9;&#x8EAB;&#x4F53;&#x59FF;&#x6001;&#x654F;&#x611F;&#x5BF9;&#x4F4D;&#x7F6E;&#x4E0D;&#x654F;&#x611F;&#x3002;</li>
+<li>&#x672C;&#x5B9E;&#x9A8C;&#x7684;&#x8868;&#x73B0;&#x5341;&#x5206;&#x4F9D;&#x8D56;&#x4E8E;&#x9AA8;&#x9ABC;&#x68C0;&#x6D4B;&#x7684;&#x7ED3;&#x679C;&#xFF0C;&#x53EF;&#x89E3;&#x91CA;&#x6027;&#x5F3A;&#xFF0C;&#x5BF9;&#x566A;&#x97F3;&#x4E0D;&#x654F;&#x611F;&#xFF0C;&#x5305;&#x542B;&#x4E30;&#x5BCC;&#x8BED;&#x4E49;&#xFF0C;&#x7279;&#x5F81;&#x7EF4;&#x5EA6;&#x4F4E;&#x7684;&#x4F18;&#x70B9;&#x3002;</li>
+<li>&#x6A21;&#x578B;&#x4EE5; GRU &#x4E3A;&#x57FA;&#x7840;&#xFF0C;&#x5F15;&#x5165;&#x4E86;Message Passing&#x673A;&#x5236;&#xFF0C;&#x6CA1;&#x6709;&#x5B8C;&#x5168;&#x5B64;&#x7ACB; global &#x548C; local&#xFF0C;&#x5E76;&#x4E14;&#x4F7F; global &#x548C; local &#x53EF;&#x4EE5;&#x4E92;&#x76F8;&#x4F20;&#x9012;&#x4FE1;&#x606F;&#xFF0C;&#x534F;&#x540C;&#x8FA8;&#x522B;&#x5F02;&#x5E38;&#x884C;&#x4E3A;&#x3002;&#x901A;&#x8FC7;&#x5BF9;&#x51B3;&#x7B56;&#x6743;&#x91CD;&#x53EF;&#x89C6;&#x5316;&#x80FD;&#x5E2E;&#x52A9;&#x5B9E;&#x9A8C;&#x8005;&#x4E86;&#x89E3;&#x5224;&#x65AD;&#x5F02;&#x5E38;&#x7684;&#x5177;&#x4F53;&#x56E0;&#x7D20;&#xFF0C;&#x6709;&#x52A9;&#x4E8E;&#x6DF1;&#x5165;&#x4E86;&#x89E3;&#x6A21;&#x578B;&#x7684;&#x5185;&#x90E8;&#x51B3;&#x7B56;&#x903B;&#x8F91;&#x3002;</li>
+<li>&#x6A21;&#x578B;&#x67B6;&#x6784;&#x4E3A;&#x5355;&#x7F16;&#x7801;&#x5668;&#x53CC;&#x89E3;&#x7801;&#x5668;&#x67B6;&#x6784;&#xFF0C;&#x8981;&#x6C42;&#x6A21;&#x578B;&#x5373;&#x53EF;&#x4EE5;&#x8FD8;&#x539F;&#x51FA;&#x8F93;&#x5165;&#x7684;&#x9AA8;&#x9ABC;&#x67B6;&#x6784;&#xFF0C;&#x8FD8;&#x80FD;&#x5BF9;&#x6A21;&#x578B;&#x4E0D;&#x53EF;&#x89C1;&#x7684;&#x672A;&#x6765;&#x9AA8;&#x9ABC;&#x7ED3;&#x6784;&#x505A;&#x51FA;&#x9884;&#x6D4B;&#x3002;</li>
+</ul>
+</blockquote>
+<ul>
+<li>&#x672C;&#x6A21;&#x578B;&#x5177;&#x6709;&#x5982;&#x4E0B;&#x7F3A;&#x9677;&#xFF1A;<ol>
+<li>&#x4F9D;&#x8D56;&#x4E8E;&#x9AD8;&#x8D28;&#x91CF;&#x7684;&#x9AA8;&#x9ABC;&#x68C0;&#x6D4B;&#x548C;&#x8DDF;&#x8E2A;&#xFF0C;&#x5BF9;&#x9AA8;&#x9ABC;&#x68C0;&#x6D4B;&#x8DDF;&#x8E2A;&#x6709;&#x6781;&#x9AD8;&#x8981;&#x6C42;&#x3002;</li>
+<li>&#x53EA;&#x5173;&#x6CE8;&#x4EBA;&#x4F53;&#x9AA8;&#x9ABC;&#x60C5;&#x51B5;&#xFF0C;&#x4F1A;&#x5FFD;&#x89C6;&#x4EBA;&#x4E0E;&#x73AF;&#x5883;&#x4EA4;&#x4E92;&#x7684;&#x5185;&#x5BB9;&#x3002;&#x5982;&#x73AF;&#x5883;&#x4E2D;&#x5B58;&#x5728;&#x8349;&#x576A;&#xFF0C;&#x884C;&#x8D70;&#x76F4;&#x63A5;&#x8E0F;&#x5165;&#x8349;&#x576A;&#x4E5F;&#x5E94;&#x5224;&#x65AD;&#x5F02;&#x5E38;&#x884C;&#x4E3A;&#x3002;</li>
+<li>&#x5BF9;&#x4E8E;Message Passing&#x673A;&#x5236;&#x7684;&#x53EF;&#x89E3;&#x91CA;&#x6027;&#x5DEE;&#x3002;</li>
+<li>&#x6A21;&#x578B;&#x5E76;&#x884C;&#x5EA6;&#x4F4E;&#x3002;</li>
+</ol>
+</li>
+</ul>
+<hr>
+<h2 id="1-introduction">1 Introduction</h2>
+<ul>
+<li>&#x89C6;&#x9891;&#x5F02;&#x5E38;&#x68C0;&#x6D4B;&#x7684;&#x6311;&#x6218;&#xFF1A;<ol>
+<li>&#x7F3A;&#x4E4F;&#x4EBA;&#x7C7B;&#x76D1;&#x7763;</li>
+<li>&#x5BF9;&#x89C6;&#x9891;&#x4E2D;&#x5F02;&#x5E38;&#x884C;&#x4E3A;&#x7684;&#x5B9A;&#x4E49;&#x4E0D;&#x660E;&#x786E;</li>
+</ol>
+</li>
+<li>&#x5927;&#x591A;&#x6570;&#x7684;&#x65B9;&#x6848;&#x90FD;&#x662F;&#x57FA;&#x4E8E;&#x50CF;&#x7D20;&#x5916;&#x89C2;&#x548C;&#x7279;&#x5B9A;&#x52A8;&#x4F5C;&#x7279;&#x5F81;<ul>
+<li>&#x9AD8;&#x7EF4;&#x975E;&#x7ED3;&#x6784;&#x5316;</li>
+<li>&#x5BF9;&#x566A;&#x97F3;&#x654F;&#x611F;</li>
+<li>&#x5B58;&#x5728;&#x4FE1;&#x606F;&#x5197;&#x4F59;&#xFF0C;&#x4F1A;&#x589E;&#x5927;&#x8BAD;&#x7EC3;&#x548C;&#x533A;&#x5206;&#x566A;&#x97F3;&#x7684;&#x96BE;&#x5EA6;&#x3002;</li>
+<li>&#x7F3A;&#x4E4F;&#x53EF;&#x89E3;&#x91CA;&#x6027;&#xFF0C;&#x5728;&#x89C6;&#x89C9;&#x7279;&#x5F81;&#x548C;&#x884C;&#x4E3A;&#x7684;&#x771F;&#x5B9E;&#x542B;&#x4E49;&#x4E2D;&#x5B58;&#x5728;&#x8BED;&#x4E49;&#x5DEE;&#x8DDD;&#x3002;</li>
+</ul>
+</li>
+<li>&#x672C;&#x6587;&#x4F7F;&#x7528;2D&#x4EBA;&#x7C7B;&#x9AA8;&#x9ABC;&#x8F68;&#x8FF9;&#xFF0C;&#x9AA8;&#x9ABC;&#x7279;&#x5F81;&#x76F8;&#x6BD4;&#x4E8E;&#x4E0A;&#x8FF0;&#x65B9;&#x6848;&#x4F18;&#x70B9;&#x5982;&#x4E0B;&#xFF1A;<ol>
+<li>&#x7B80;&#x6D01;&#x5C0F;&#x578B;</li>
+<li>&#x5F3A;&#x7ED3;&#x6784;&#x6027;</li>
+<li>&#x5BCC;&#x8BED;&#x4E49;</li>
+<li>&#x53EF;&#x9AD8;&#x5EA6;&#x63CF;&#x8FF0;&#x4EBA;&#x7C7B;&#x884C;&#x4E3A;</li>
+</ol>
+</li>
+<li>&#x672C;&#x6587;&#x5C06;&#x9AA8;&#x9ABC;&#x8FD0;&#x52A8;&#x5206;&#x89E3;&#x4E3A;&#x4E24;&#x4E2A;&#x5B50;&#x5757;<ol>
+<li>&#x5168;&#x8EAB;&#x8FD0;&#x52A8; -&gt; &#x8EAB;&#x4F53;&#x5728;&#x5C4F;&#x5E55;&#x4E2D;&#x7684;&#x4F4D;&#x7F6E;</li>
+<li>&#x5C40;&#x90E8;&#x8EAB;&#x4F53;&#x59FF;&#x6001; -&gt; &#x5404;&#x5173;&#x8282;&#x70B9; &#x76F8;&#x5BF9;&#x4E8E; &#x5168;&#x8EAB;&#x68C0;&#x6D4B;&#x6846;&#x4E2D;&#x5FC3;&#x70B9;&#x7684;&#x4F4D;&#x7F6E;</li>
+</ol>
+</li>
+<li>&#x6A21;&#x578B;&#x79F0;&#x4E3A;MPED-RNN&#xFF0C;&#x7531;&#x4E24;&#x4E2A;RNN&#x5206;&#x652F;&#x7EC4;&#x6210;&#xFF0C;&#x5206;&#x522B;&#x5BF9;&#x5E94;global&#x548C;local&#x3002;<ul>
+<li>&#x6A21;&#x578B;&#x53EF;&#x5BF9;&#x5F71;&#x54CD;&#x51B3;&#x7B56;&#x7684;&#x56E0;&#x7D20;&#x548C;&#x6743;&#x91CD;&#x8FDB;&#x884C;&#x53EF;&#x89C6;&#x5316;&#x6765;&#x63D0;&#x4F9B;&#x5185;&#x90E8;&#x63A8;&#x7406;&#x7684;&#x5F00;&#x653E;&#x5F0F;&#x89E3;&#x91CA;&#x3002;</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="2-relate-work">2 Relate Work</h2>
+<h3 id="21-video-anomaly-detection">2.1 Video anomaly detection</h3>
+<ul>
+<li>&#x4F20;&#x7EDF;&#x65B9;&#x6CD5; : &#x5355;&#x5206;&#x7C7B;SVM&#x3001;&#x6DF7;&#x5408;&#x6982;&#x7387;PCA</li>
+<li>&#x65B0;&#x6280;&#x672F; : <ol>
+<li>CNN</li>
+<li>&#x5149;&#x6D41;&#x9884;&#x6D4B;(&#x6210;&#x672C;&#x9AD8;)</li>
+<li>&#x7ED3;&#x6784;&#x5316;&#x8868;&#x793A;(&#x7269;&#x4F53;&#x8F68;&#x8FF9;&#x6765;&#x6307;&#x5BFC;&#x89C6;&#x89C9;&#x7279;&#x5F81;&#x6C60;&#x5316;&#xFF0C;&#x7ED9;&#x4E88;&#x91CD;&#x70B9;&#x533A;&#x57DF;&#x66F4;&#x591A;attention)</li>
+<li>&#x4F7F;&#x7528;&#x76EE;&#x6807;&#x68C0;&#x6D4B;&#x3001;&#x5C5E;&#x6027;&#x68C0;&#x6D4B;&#x548C;&#x52A8;&#x4F5C;&#x68C0;&#x6D4B;&#x6765;&#x7406;&#x89E3;&#x5F02;&#x5E38;&#x5206;&#x6570;(&#x6613;&#x88AB;&#x68C0;&#x6D4B;&#x5230;&#x7684;&#x4E0D;&#x76F8;&#x5173;&#x4FE1;&#x606F;&#x5F71;&#x54CD;&#xFF0C;&#x4E14;label sets&#x4E0D;&#x80FD;&#x8986;&#x76D6;&#x6240;&#x6709;&#x5185;&#x5BB9;)</li>
+</ol>
+</li>
+<li>&#x672C;&#x6587;&#x6280;&#x672F; : <ol>
+<li>&#x4F4E;&#x7EF4;&#x7279;&#x5F81;(&#x9AA8;&#x9ABC;&#x70B9;)</li>
+<li>&#x8BED;&#x4E49;&#x4E30;&#x5BCC;</li>
+<li>&#x53EF;&#x89E3;&#x91CA;&#x6027;&#x5F3A;</li>
+</ol>
+</li>
+</ul>
+<hr>
+<h3 id="22-human-trajectory-modeling">2.2 Human trajectory modeling</h3>
+<ul>
+<li>&#x672C;&#x6587;&#x91C7;&#x53D6; &#x63D0;&#x53D6;&#x4E3B;&#x8981;&#x7684;&#x6B63;&#x5E38;&#x7279;&#x5F81;&#x6A21;&#x5F0F;&#x6765;&#x6392;&#x9664;&#x5F02;&#x5E38; &#x7684;&#x65B9;&#x6CD5;&#x3002;</li>
+<li>Du<sup><a href="#fn_1" id="reffn_1">1</a></sup>&#x7B49;&#x4EBA;&#x63D0;&#x51FA;&#x4E86;&#x5212;&#x5206;&#x9AA8;&#x9ABC;&#x70B9;&#x4E3A;&#x4E94;&#x4E2A;&#x90E8;&#x5206;&#xFF0C;&#x4E94;&#x4E2A; &#x53CC;&#x5411;&#x795E;&#x7ECF;&#x7F51;&#x7EDC; &#x8054;&#x5408;&#x5EFA;&#x6A21;&#x3002;</li>
+<li>&#x672C;&#x6587;&#x81EA;&#x7136;&#x5206;&#x89E3;&#x4EBA;&#x7C7B;&#x884C;&#x4E3A;&#x4E3A; &#x5168;&#x8EAB;&#x8FD0;&#x52A8; &#x548C; &#x5C40;&#x90E8;&#x53D8;&#x5F62; &#x4E24;&#x90E8;&#x5206;&#xFF0C;&#x5E76;&#x4F7F;&#x7528; &#x4EA4;&#x4E92;&#x5FAA;&#x73AF;&#x7F51;&#x7EDC; &#x8054;&#x5408;&#x5EFA;&#x6A21;&#x3002;</li>
+</ul>
+<hr>
+<h2 id="3-method">3 Method</h2>
+<ul>
+<li>&#x672C;&#x6587;&#x5B9E;&#x9A8C;&#x524D;&#x63D0;&#x662F;&#x9AA8;&#x9ABC;&#x7279;&#x5F81;&#x5DF2;&#x7ECF;&#x4ECE;&#x89C6;&#x9891;&#x4E2D;&#x63D0;&#x53D6;&#x51FA;&#x6765;&#xFF0C;&#x5373;&#x672C;&#x6587;&#x7684;&#x8F93;&#x5165;&#x6570;&#x636E;&#x4E3A;&#x9AA8;&#x9ABC;&#x7279;&#x5F81;&#x5E8F;&#x5217;&#x3002;</li>
+<li>&#x6BCF;&#x4E2A;&#x65F6;&#x95F4;&#x6B65;&#x7684;&#x8F93;&#x5165;&#x6570;&#x636E;&#x4E3A;&#x5982;&#x4E0B;&#xFF0C;&#x5176;&#x4E2D;$k$&#x4E3A;&#x5173;&#x8282;&#x70B9;&#x7684;&#x6570;&#x91CF;&#x3002;
+$$
+f<em>{t}=(x</em>{t}^{i},y<em>{t}^{i})</em>{i=1\dots k}
+$$</li>
+</ul>
+<hr>
+<h3 id="31-skeleton-motion-decomposition">3.1 Skeleton Motion Decomposition</h3>
+<ul>
+<li><sup><a href="#fn_2" id="reffn_2">2</a></sup><sup><a href="#fn_3" id="reffn_3">3</a></sup>&#x4E2D;&#x6CA1;&#x6709;&#x5C06;&#x9AA8;&#x9ABC;&#x7279;&#x5F81;&#x5206;&#x89E3;&#x4E3A; &#x5168;&#x8EAB;&#x8FD0;&#x52A8; &#x548C; &#x5C40;&#x90E8;&#x59FF;&#x52BF;&#xFF0C;&#x5728;&#x5177;&#x6709;&#x7EDF;&#x4E00;&#x9AA8;&#x67B6;&#x5C3A;&#x5EA6;&#x548C;&#x6D3B;&#x52A8;&#x7C7B;&#x578B;&#x7684;&#x89C6;&#x9891;&#x4E2D;&#x8868;&#x73B0;&#x826F;&#x597D;&#xFF0C;&#x5176;&#x4E2D;&#x4E24;&#x4E2A;&#x56E0;&#x7D20;&#x7684;&#x8D21;&#x732E;&#x662F;&#x4E00;&#x81F4;&#x7684;&#x3002;&#x4F46;&#x5728;&#x76D1;&#x63A7;&#x89C6;&#x9891;&#x4E2D;&#xFF0C;&#x4EBA;&#x4F53;&#x7684;&#x9AA8;&#x67B6;&#x5C3A;&#x5EA6;&#x5F88;&#x5927;&#x7A0B;&#x5EA6;&#x4E0A;&#x4F9D;&#x8D56;&#x4E8E;&#x4EBA;&#x7684;&#x4F4D;&#x7F6E;&#x548C;&#x52A8;&#x4F5C;&#xFF0C;&#x5177;&#x4F53;&#x5982;&#x4E0B;&#x3002;<ol>
+<li>&#x5F53;&#x4EBA;&#x5728;&#x9760;&#x8FD1;&#x6444;&#x50CF;&#x5934;&#x7684;&#x533A;&#x57DF;&#xFF0C;&#x89C2;&#x5BDF;&#x5230;&#x7684;&#x8FD0;&#x52A8;&#x4E3B;&#x8981;&#x53D7;&#x5C40;&#x90E8;&#x56E0;&#x7D20;&#x5F71;&#x54CD;&#x3002;</li>
+<li>&#x5F53;&#x4EBA;&#x5728;&#x8FDC;&#x79BB;&#x6444;&#x50CF;&#x5934;&#x7684;&#x533A;&#x57DF;&#xFF0C;&#x89C2;&#x5BDF;&#x5230;&#x7684;&#x8FD0;&#x52A8;&#x4E3B;&#x8981;&#x53D7;&#x5168;&#x5C40;&#x56E0;&#x7D20;&#x5F71;&#x54CD;&#xFF0C;&#x5BB9;&#x6613;&#x5FFD;&#x7565;&#x5C40;&#x90E8;&#x56E0;&#x7D20;&#x3002;</li>
+</ol>
+</li>
+<li>&#x672C;&#x6587;&#x5C06;&#x9AA8;&#x9ABC;&#x7279;&#x5F81;&#x5206;&#x89E3;&#x4E3A; <code>global</code> &#x548C; <code>local</code>&#x4E24;&#x90E8;&#x5206;<ol>
+<li>global : &#x4E3B;&#x8981;&#x5305;&#x542B;&#x4EBA;&#x4F53;&#x68C0;&#x6D4B;&#x6846;&#x7684; &#x5F62;&#x72B6;&#x3001;&#x5927;&#x5C0F;&#x548C;&#x521A;&#x6027;&#x8FD0;&#x52A8;&#x3002;</li>
+<li>local : &#x5305;&#x542B;&#x9AA8;&#x9ABC;&#x5185;&#x90E8;&#x53D8;&#x5F62;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x5FFD;&#x7565;&#x9AA8;&#x9ABC;&#x5728;&#x5C4F;&#x5E55;&#x4E2D;&#x7684;&#x7EDD;&#x5BF9;&#x4F4D;&#x7F6E;&#xFF0C;&#x53EA;&#x8003;&#x5BDF;&#x5173;&#x8282;&#x70B9;&#x76F8;&#x5BF9;&#x4E8E;&#x4EBA;&#x4F53;&#x68C0;&#x6D4B;&#x6846;&#x4E2D;&#x5FC3;&#x7684;&#x4F4D;&#x7F6E;&#x3002;</li>
+</ol>
+</li>
+</ul>
+<hr>
+<ul>
+<li>&#x4E0B;&#x56FE;&#x4E3A;&#x672C;&#x90E8;&#x5206;&#x5185;&#x5BB9;&#x5177;&#x4F53;&#x56FE;&#x793A;&#x3002;<ul>
+<li>&#x89C4;&#x8303;&#x53C2;&#x8003;&#x7CFB;&#xFF1A;&#x4EE5; &#x68C0;&#x6D4B;&#x6846;&#x4E2D;&#x5FC3; &#x4E3A; &#x539F;&#x70B9;&#xFF0C;&#x53F3;&#x65B9;&#x5411;&#x548C;&#x4E0A;&#x65B9;&#x5411;&#x5206;&#x522B;&#x4EE3;&#x8868; x,y &#x6B63;&#x65B9;&#x5411;&#x3002;<ul>
+<li>&#x89C4;&#x8303;&#x53C2;&#x8003;&#x7CFB;&#x5C06; &#x5C40;&#x90E8;&#x5206;&#x91CF; &#x7684;&#x503C; &#x6807;&#x51C6;&#x5316; &#x4E3A;&#x5176; &#x76F8;&#x5BF9;&#x4E8E; &#x4EBA;&#x4F53;&#x68C0;&#x6D4B;&#x6846; &#x7684;&#x5927;&#x5C0F;&#xFF0C;&#x4E0D;&#x53BB;&#x8003;&#x8651;&#x539F;&#x59CB;&#x771F;&#x5B9E;&#x503C;&#x3002;&#x5982;&#x4E0B;&#x65B9;&#x516C;&#x5F0F;2&#xFF0C;3&#x3002;</li>
+</ul>
+</li>
+<li>&#x5168;&#x5C40;&#x5206;&#x91CF;&#xFF1A;&#x7531; &#x76D1;&#x63A7;&#x533A;&#x57DF;&#x5DE6;&#x4E0B;&#x89D2; &#x6307;&#x5411; &#x89C4;&#x8303;&#x53C2;&#x8003;&#x7CFB;&#x539F;&#x70B9; &#x7684;&#x5411;&#x91CF;&#x3002;</li>
+<li>&#x539F;&#x59CB;&#x5173;&#x8282;&#x70B9;&#xFF1A;&#x7531; &#x76D1;&#x63A7;&#x533A;&#x57DF;&#x5DE6;&#x4E0B;&#x89D2; &#x6307;&#x5411; &#x5177;&#x4F53;&#x5173;&#x8282;&#x70B9; &#x7684;&#x5411;&#x91CF;&#x3002;</li>
+<li>&#x5C40;&#x90E8;&#x5206;&#x91CF;&#xFF1A;&#x7531; &#x89C4;&#x8303;&#x53C2;&#x8003;&#x7CFB;&#x539F;&#x70B9; &#x6307;&#x5411; &#x5177;&#x4F53;&#x5173;&#x8282;&#x70B9; &#x7684;&#x5411;&#x91CF;&#x3002;&#x5982;&#x4E0B;&#x65B9;&#x516C;&#x5F0F;1&#x3002;
+<img src="https://raw.githubusercontent.com/FANSENG/Figure-bed/master/20220728002555.png" alt=""></li>
+</ul>
+</li>
+<li>&#x5168;&#x5C40;&#x52A8;&#x4F5C; &#x548C; &#x5C40;&#x90E8;&#x52A8;&#x4F5C; &#x5728;&#x4E24;&#x4E2A;&#x5E76;&#x53D1;&#x7684;&#x5B50;&#x8FDB;&#x7A0B;&#x4E2D;&#x5EFA;&#x6A21;&#x3002;</li>
+<li>&#x5728;&#x7279;&#x5B9A;&#x73AF;&#x5883;&#x4E2D;&#xFF08;&#x5982;&#x8D70;&#x5ECA;&#xFF09;&#xFF0C;&#x4E24;&#x4E2A;&#x5206;&#x91CF;&#x4E4B;&#x95F4;&#x4E00;&#x822C;&#x90FD;&#x5177;&#x6709;&#x8F83;&#x5F3A;&#x7684;&#x76F8;&#x5173;&#x6027;&#x3002;</li>
+</ul>
+<hr>
+<ul>
+<li>&#x672C;&#x90E8;&#x5206;&#x516C;&#x5F0F;&#x5982;&#x4E0B;
+$$
+f<em>{t}^{l,i}=f</em>{t}^{i} - f_{t}^{g} \tag{1}
+$$
+$$
+x^{g} = \frac{max(x^i)+min(x^i)}{2};\ \ \ \ y^{g} = \frac{max(y^i)+min(y^i)}{2};\tag{2-1}
+$$
+$$
+w = max(x^i) - min(x^i);\ \ \ \ h = max(y^i) - min(y^i) \tag{2-2}
+$$
+$$
+x^{l,i} = \frac{x^i-x^g}{w};\ \ \ \ y^{l,i} = \frac{y^i-y^g}{h} \tag{3}
+$$</li>
+</ul>
+<hr>
+<h3 id="32-mped-rnn-architecture">3.2 MPED-RNN Architecture</h3>
+<ul>
+<li>MPED-RNN &#x5BF9; &#x5168;&#x5C40;&#x5206;&#x91CF; &#x548C; &#x5C40;&#x90E8;&#x5206;&#x91CF; &#x5EFA;&#x6A21;&#x65F6;&#xFF0C;&#x4F7F;&#x7528;&#x4E86;&#x4E24;&#x4E2A;&#x53EF;&#x4EE5;&#x4EA4;&#x4E92;&#x7684;&#x5B50;&#x8FDB;&#x7A0B;&#xFF0C;&#x4E92;&#x76F8;&#x4F20;&#x9012; &#x5185;&#x90E8;&#x72B6;&#x6001; &#x4F5C;&#x4E3A;&#x5BF9;&#x65B9;&#x4E0B;&#x4E00;&#x4E2A;&#x65F6;&#x95F4;&#x6B65;&#x7684;&#x8F93;&#x5165;&#x3002;</li>
+<li>MPED-RNN &#x5305;&#x542B;&#x4E24;&#x4E2A; &#x5FAA;&#x73AF;&#x7F16;&#x7801;&#x89E3;&#x7801;&#x7F51;&#x7EDC; &#x5206;&#x652F;&#xFF0C;&#x5206;&#x522B;&#x8D1F;&#x8D23;&#x5904;&#x7406; &#x5168;&#x5C40;&#x53D8;&#x91CF; &#x548C; &#x5C40;&#x90E8;&#x53D8;&#x91CF;&#xFF0C; &#x6BCF;&#x4E2A;&#x5206;&#x652F;&#x90FD;&#x5305;&#x542B;&#x4E09;&#x4E2A;RNN&#xFF0C; &#x67B6;&#x6784;&#x4E3A; &#x5355;&#x7F16;&#x7801;&#x5668;&#x53CC;&#x89E3;&#x7801;&#x5668;&#xFF0C; &#x5206;&#x522B;&#x4E3A; Encoder&#x3001;Reconstructing Decoder &#x548C; Predicting Decoder&#x3002;</li>
+<li>&#x67B6;&#x6784;&#x56FE;&#x5177;&#x4F53;&#x5982;&#x4E0B;&#xFF1A;
+<img src="https://raw.githubusercontent.com/FANSENG/Figure-bed/master/20220728235330.png" alt=""></li>
+</ul>
+<hr>
+<ul>
+<li><p>Encoder&#xFF1A;</p>
+<ol>
+<li>&#x8F93;&#x5165;&#x957F;&#x5EA6;&#x4E3A; <code>T</code> &#x7684;&#x9AA8;&#x9ABC;&#x5E8F;&#x5217;&#xFF0C;&#x9996;&#x5148;&#x5C06;&#x6240;&#x6709;GRU&#x7684;&#x9690;&#x85CF;&#x72B6;&#x6001;&#x521D;&#x59CB;&#x5316;&#x4E3A; null&#x3002;</li>
+<li>&#x5BF9;&#x4E8E;&#x6BCF;&#x4E2A;&#x65F6;&#x95F4;&#x6B65; <code>t</code>&#xFF0C;&#x9AA8;&#x9ABC;&#x4FE1;&#x606F; $f<em>{t}$&#x88AB;&#x5206;&#x89E3;&#x4E3A;$f</em>{t}^g$&#x548C;$f_{t}^l$&#xFF0C;&#x5982;&#x516C;&#x5F0F;1&#x3001;2&#x548C;3&#x3002;</li>
+<li>&#x4E24;&#x4E2A;&#x5206;&#x652F;&#x95F4;&#x4E92;&#x76F8;&#x4F20;&#x9012;&#x6309;&#x7167;&#x4E0B;&#x65B9; &#x516C;&#x5F0F;4&#x548C;5 &#x8BA1;&#x7B97;&#x51FA;&#x7684;&#x6D88;&#x606F;&#x3002;</li>
+<li>&#x5BF9;&#x4E8E;&#x6BCF;&#x4E2A;&#x65F6;&#x95F4;&#x6B65;&#xFF0C;&#x5168;&#x5C40;&#x5206;&#x91CF;&#x548C;&#x5C40;&#x90E8;&#x5206;&#x91CF;&#x901A;&#x8FC7;&#x4E0B;&#x65B9; &#x516C;&#x5F0F;6&#x548C;7 &#x8FDB;&#x884C;&#x7F16;&#x7801;&#x3002;</li>
+</ol>
+</li>
+<li><p>Reconstructing Decoders&#xFF1A;</p>
+<ol>
+<li>&#x6807;&#x51C6;&#x5316;&#x9690;&#x85CF;&#x72B6;&#x6001;&#x4E3A; $h<em>{T}^{gr} = h</em>{T}^{ge}$ &#x548C; $h<em>{T}^{lr} = h</em>{T}^{le}$&#x3002;</li>
+<li>&#x5BF9;&#x4E8E; $t=T,T-1,\dots ,1$&#xFF0C;&#x4F7F;&#x7528;&#x4E0B;&#x65B9; &#x516C;&#x5F0F;8&#xFF0C;9 &#x66F4;&#x65B0;&#x9690;&#x85CF;&#x72B6;&#x6001;&#x3002;</li>
+</ol>
+</li>
+<li><p>Predicting Decoders</p>
+<ol>
+<li>&#x6807;&#x51C6;&#x5316;&#x9690;&#x85CF;&#x72B6;&#x6001;&#x4E3A; $h<em>{T}^{gp} = h</em>{T}^{ge}$ &#x548C; $h<em>{T}^{lp} = h</em>{T}^{le}$&#x3002;</li>
+<li>&#x5BF9;&#x4E8E; $t=T+1,T+2,\dots ,T+P$&#xFF0C;&#x4F7F;&#x7528;&#x4E0B;&#x65B9; &#x516C;&#x5F0F;10&#xFF0C;11 &#x66F4;&#x65B0;&#x9690;&#x85CF;&#x72B6;&#x6001;&#x3002;</li>
+</ol>
+</li>
+</ul>
+<hr>
+<ul>
+<li>&#x53CC;&#x89E3;&#x7801;&#x5668;&#x67B6;&#x6784;&#x5171;&#x540C;&#x5F3A;&#x5236;&#x7F16;&#x7801;&#x5668;&#x5B66;&#x4E60;&#x7D27;&#x51D1;&#x7684;&#x8868;&#x793A;&#xFF0C;&#x4FDD;&#x8BC1;&#x7F16;&#x7801;&#x7ED3;&#x679C;&#x53EF;&#x4EE5;&#x91CD;&#x5EFA;&#x8F93;&#x5165;&#x5E76;&#x9884;&#x6D4B;&#x672A;&#x6765;&#x3002;</li>
+<li>&#x5728;&#x6D4B;&#x8BD5;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x5F02;&#x5E38;&#x7684;&#x884C;&#x4E3A;&#x4E0D;&#x4F1A;&#x88AB;&#x9884;&#x6D4B;&#x5230;&#xFF0C;&#x56E0;&#x4E3A;&#x6A21;&#x578B;&#x4ECE;&#x6CA1;&#x6709;&#x89C1;&#x8FC7;&#x5F02;&#x5E38;&#x6570;&#x636E;&#x5E76;&#x4E14;&#x5F02;&#x5E38;&#x6570;&#x636E;&#x4E0D;&#x7B26;&#x5408;&#x6B63;&#x5E38;&#x52A8;&#x4F5C;&#x6A21;&#x5F0F;&#x3002;</li>
+<li>&#x5728;&#x89E3;&#x7801;&#x5668;&#x4E2D;&#xFF0C;&#x6295;&#x5F71;&#x7279;&#x5F81; $f<em>{t}^g$ &#x548C; $f</em>{t}^l$ &#x7531; $h<em>{t}^g$ &#x548C; $h</em>{t}^l$ &#x901A;&#x8FC7;&#x4E24;&#x4E2A;&#x72EC;&#x7ACB;&#x7684;&#x5168;&#x8FDE;&#x63A5;&#x5C42;&#x751F;&#x6210;&#xFF0C;&#x7136;&#x540E;&#x5C06;&#x4E24;&#x4E2A;&#x6295;&#x5F71;&#x7279;&#x5F81;&#x62FC;&#x63A5;&#x8D77;&#x6765;&#x8F93;&#x5165;&#x53E6;&#x4E00;&#x4E2A;&#x5168;&#x8FDE;&#x63A5;&#x5C42;&#x5F97;&#x5230;$f<em>{t}$&#x3002;&#x5728;&#x7406;&#x60F3;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;$f</em>{t}^g$ &#x3001; $f<em>{t}^l$  &#x548C; $f</em>{t}$ &#x4E09;&#x8005;&#x6EE1;&#x8DB3; &#x516C;&#x5F0F;1&#xFF0C;2&#x548C;3&#x3002;</li>
+<li>&#x4F7F;&#x7528;&#x5168;&#x8FDE;&#x63A5;&#x5C42;&#x5B66;&#x4E60;&#x9006;&#x6620;&#x5C04;&#x53EF;&#x4EE5;&#x63D0;&#x9AD8;&#x6A21;&#x578B;&#x9C81;&#x68D2;&#x6027;&#xFF0C;&#x80FD;&#x8FC7;&#x6EE4;&#x6389;&#x566A;&#x97F3;&#xFF1B;&#xFF1F;==&#x6295;&#x5F71;&#x7279;&#x5F81;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x8BC4;&#x4F30;&#x8F93;&#x5165;&#x7684;&#x9AA8;&#x9ABC;&#x5E8F;&#x5217;&#x548C;&#x5B66;&#x4E60;&#x5230;&#x7684;&#x6B63;&#x5E38;&#x884C;&#x4E3A;&#x7684;&#x4E00;&#x81F4;&#x6027;&#xFF0C;&#x56E0;&#x6B64;&#x88AB;&#x7528;&#x6765;&#x6784;&#x5EFA;&#x635F;&#x5931;&#x51FD;&#x6570;&#x548C;&#x6D4B;&#x8BD5;&#x5F97;&#x5206;==&#xFF1F;&#x3002;</li>
+</ul>
+<hr>
+<ul>
+<li>&#x672C;&#x90E8;&#x5206;&#x516C;&#x5F0F;&#x5982;&#x4E0B;
+$$
+m<em>{t}^{l\to g}=\sigma(W^{l \to g}h</em>{t-1}^l+b^{l \to g}) \tag{4}
+$$
+$$
+m<em>{t}^{g\to l}=\sigma(W^{g \to l}h</em>{t-1}^g+b^{g \to l}) \tag{5}
+$$
+$$
+E^{ge}:h<em>{t}^{ge}=GRU([f</em>{t}^g,m<em>{t}^{le\to ge}],h</em>{t-1}^{ge}) \tag{6}
+$$
+$$
+E^{le}:h<em>{t}^{le}=GRU([f</em>{t}^l,m<em>{t}^{ge\to le}],h</em>{t-1}^{le}) \tag{7}
+$$
+$$
+D<em>{r}^g:h</em>{t-1}^{gr}=GRU(m<em>{t}^{lr\to gr},h</em>{t}^{gr}\tag{8})
+$$
+$$
+D<em>{r}^l:h</em>{t-1}^{lr}=GRU(m<em>{t}^{gr\to lr},h</em>{t}^{lr}\tag{9})
+$$
+$$
+D<em>{p}^g:h</em>{t}^{gp}=GRU(m<em>{t}^{lp\to gp},h</em>{t-1}^{gp} \tag{10})
+$$
+$$
+D<em>{p}^l:h</em>{t}^{lp}=GRU(m<em>{t}^{gp\to lp},h</em>{t-1}^{lp} \tag{11})
+$$</li>
+</ul>
+<hr>
+<h3 id="33-training-mped-rnn">3.3 Training MPED-RNN</h3>
+<ul>
+<li><p>Training setup</p>
+<ul>
+<li>&#x9AA8;&#x9ABC;&#x68C0;&#x6D4B;&#x8F68;&#x8FF9;&#x5728;&#x89C6;&#x9891;&#x4E2D;&#x51FA;&#x73B0;&#x7684;&#x5E27;&#x6570;&#x4E0D;&#x540C;&#xFF0C;&#x4F46;&#x6A21;&#x578B;&#x9700;&#x8981;&#x8F93;&#x5165;&#x56FA;&#x5B9A;&#x957F;&#x5EA6;&#x7684;&#x5E8F;&#x5217;&#xFF0C;&#x6240;&#x4EE5;&#x4F7F;&#x7528;&#x4E86;&#x6ED1;&#x52A8;&#x7A97;&#x53E3;&#x7B56;&#x7565;&#x89E3;&#x51B3;&#x6B64;&#x95EE;&#x9898;&#xFF0C;&#x5C06;&#x5B8C;&#x6574;&#x7684;&#x9AA8;&#x9ABC;&#x8F68;&#x8FF9;&#x5206;&#x5272;&#x4E3A;&#x591A;&#x6BB5;&#x3002;&#x5982; &#x516C;&#x5F0F;12&#x3001;13&#xFF0C;&#x5176;&#x4E2D;<code>s</code>&#x4E3A;&#x6B65;&#x957F;&#xFF0C;<code>T</code>&#x4E3A;&#x7247;&#x6BB5;&#x957F;&#x5EA6;&#x3002;</li>
+</ul>
+</li>
+<li><p>Loss functions</p>
+<ul>
+<li>&#x672C;&#x6587;&#x57FA;&#x4E8E;&#x4E09;&#x4E2A;&#x5750;&#x6807;&#x7CFB;&#x5B9A;&#x4E49;&#x4E86;&#x4E09;&#x4E2A;&#x635F;&#x5931;&#x51FD;&#x6570;&#xFF0C;&#x5206;&#x522B;&#x4E3A;Perceptual loss $L<em>{p}$&#x3001;Global loss $L</em>{g}$&#x548C;Local loss $L_{p}$</li>
+<li>Perceptual loss &#x7EA6;&#x675F;&#x6A21;&#x578B;&#x5728;&#x56FE;&#x50CF;&#x5750;&#x6807;&#x7CFB;&#x4E2D;&#x751F;&#x6210;&#x6B63;&#x5E38;&#x5E8F;&#x5217;&#x3002;</li>
+<li>Global loss &#x548C; Local loss &#x8D1F;&#x8D23;&#x7EA6;&#x675F;&#x6A21;&#x578B;&#x4E2D;&#x7684;&#x4E24;&#x4E2A;encoder-decoder&#x5206;&#x652F;&#x3002;</li>
+<li>&#x516C;&#x5F0F;14 &#x4E3A;&#x4E09;&#x4E2A;&#x635F;&#x5931;&#x51FD;&#x6570;&#x7684;&#x901A;&#x5F0F;&#xFF0C;<code>*</code>&#x6307;&#x4EE3;<code>p</code>&#x3001;<code>g</code>&#x548C;<code>l</code>&#x5176;&#x4E2D;&#x4E4B;&#x4E00;&#x3002;&#x5F53;<code>*</code>&#x6307;&#x4EE3;<code>p</code>&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x82E5;&#x9884;&#x6D4B;&#x5E8F;&#x5217;&#x7684;&#x957F;&#x5EA6;&#x8FBE;&#x5230;&#x771F;&#x5B9E;&#x8F68;&#x8FF9;&#x7684;&#x957F;&#x5EA6;&#xFF0C;&#x5219;&#x4F1A;&#x622A;&#x65AD;&#x3002;<ul>
+<li>&#x516C;&#x5F0F;&#x4E2D;&#x53CC;&#x7AD6;&#x7EBF;&#x4E3A;&#x8303;&#x6570;&#x7B26;&#x53F7;&#xFF0C;&#x4E0B;&#x65B9;2&#x8868;&#x793A;L2&#x8303;&#x6570;&#xFF0C;&#x4E0A;&#x65B9;2&#x8868;&#x793A;&#x5E73;&#x65B9;&#x3002;</li>
+<li>L2&#x8303;&#x6570;&#x5B9A;&#x4E49;&#x4E3A;&#x5411;&#x91CF;&#x6240;&#x6709;&#x5143;&#x7D20;&#x7684;&#x5E73;&#x65B9;&#x548C;&#x7684;&#x5F00;&#x5E73;&#x65B9;&#x3002;</li>
+</ul>
+</li>
+<li>&#x516C;&#x5F0F;15 &#x4E3A;&#x603B;&#x635F;&#x5931;&#x51FD;&#x6570;&#x3002;&#x5176;&#x4E2D;${ \lambda <em>{g}, \lambda </em>{l}, \lambda _{p}} &#x2265; 0$&#x3002;</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>&#x672C;&#x90E8;&#x5206;&#x516C;&#x5F0F;&#x5982;&#x4E0B;
+$$
+seg<em>{i} = {f</em>{t}}<em>{t=b</em>{i} \dots e<em>{i}} \tag{12}
+$$
+$$
+b</em>{i} = s \times i;\ \ \ \ e<em>{i}=s\times i+T \tag{13}
+$$
+$$
+L</em>{<em>}(seg<em>{i})=\frac{1}{2}( \frac{1}{T} \sum</em>{t=b<em>{i}}^{e</em>{i}}\mid\mid \hat{f_{t}^</em>}-f<em>{t}^*\mid\mid</em>{2}^2+\frac{1}{P}\sum<em>{t=e</em>{i}+1}^{e<em>{i}+P}\mid\mid \hat{f</em>{t}^<em>}-f_{t}^</em>\mid\mid<em>{2}^2) \tag{14}
+$$
+$$
+L(seg</em>{i})=\lambda<em>{g}L</em>{g}(seg<em>{i})+\lambda</em>{l}L<em>{l}(seg</em>{i})+\lambda<em>{p}L</em>{p}(seg_{i}) \tag{15}
+$$</li>
+</ul>
+<hr>
+<h3 id="34-detecting-video-anomalies">3.4 Detecting Video Anomalies</h3>
+<ul>
+<li>&#x8BC4;&#x4EF7;&#x5F02;&#x5E38;&#x5206;&#x6570;&#x7684;4&#x4E2A;&#x6B65;&#x9AA4;
+$$
+\hat{f<em>{t}} \to  S</em>{t} \to [S<em>{t}^g, S</em>{t}^l] \to \alpha <em>{f</em>{t}} \to \alpha <em>{v</em>{t}}
+$$</li>
+<li><p>&#x63D0;&#x53D6;&#x7247;&#x6BB5;</p>
+<ul>
+<li>&#x9488;&#x5BF9;&#x6BCF;&#x4E2A;&#x8F68;&#x8FF9;&#xFF0C;&#x4F7F;&#x7528;&#x6B65;&#x957F;&#x4E3A; S &#xFF0C;&#x957F;&#x5EA6;&#x4E3A; T &#x7684;&#x6ED1;&#x52A8;&#x7A97;&#x53E3;&#x9009;&#x62E9;&#x91CD;&#x53E0;&#x7684;&#x9AA8;&#x9ABC;&#x7247;&#x6BB5;&#x3002;&#x7C7B;&#x4F3C;&#x4E0A;&#x6587; &#x516C;&#x5F0F;12&#x3001;13 &#x3002;</li>
+</ul>
+</li>
+<li><p>&#x8BC4;&#x4F30;&#x7247;&#x6BB5;loss : </p>
+<ul>
+<li>&#x4F7F;&#x7528; &#x516C;&#x5F0F;1 &#x5206;&#x89E3;&#x7247;&#x6BB5;&#xFF0C;&#x7136;&#x540E;&#x5C06;&#x6240;&#x6709;&#x7684;&#x7279;&#x5F81;&#x5582;&#x5165;&#x6A21;&#x578B;&#xFF0C;&#x5F97;&#x5230; &#x516C;&#x5F0F; 15 &#x8F93;&#x51FA;&#x7684;Loss&#x3002;</li>
+</ul>
+</li>
+<li><p>&#x6536;&#x96C6;&#x9AA8;&#x9ABC;&#x5F02;&#x5E38;&#x5F97;&#x5206; : </p>
+<ul>
+<li>&#x8BBE;&#x7F6E;&#x4E00;&#x4E2A;&#x6295;&#x7968;&#x65B9;&#x6848;&#xFF0C;&#x6839;&#x636E; &#x516C;&#x5F0F;16 &#x603B;&#x7ED3;&#x5404;&#x7247;&#x6BB5;&#x4E2D;&#x7684;Loss&#x6765;&#x5F97;&#x5230;&#x9AA8;&#x9ABC;&#x4E00;&#x573A;&#x5F97;&#x5206;&#x3002;&#x5176;&#x4E2D; u &#x4E3A;&#x9AA8;&#x9ABC;&#x7247;&#x6BB5;&#x3002;</li>
+</ul>
+</li>
+<li><p>&#x8BA1;&#x7B97;&#x5E27;&#x5F02;&#x5E38;&#x5206;&#x6570; : </p>
+<ul>
+<li>&#x6839;&#x636E; &#x516C;&#x5F0F;17 &#x8BA1;&#x7B97;&#x5E27;&#x5F02;&#x5E38;&#x5206;&#x6570;&#xFF0C;&#x5176;&#x4E2D;$Skel(v_{t})$&#x4EE3;&#x8868;&#x5E27;&#x4E2D;&#x51FA;&#x73B0;&#x7684;&#x9AA8;&#x9ABC;&#x96C6;&#x5408;&#xFF0C;&#x4F7F;&#x7528;max&#x7684;&#x539F;&#x56E0;&#x662F;&#x4E3A;&#x4E86;&#x5FFD;&#x7565;&#x6B63;&#x5E38;&#x884C;&#x4E3A;&#x7684;&#x5F02;&#x5E38;&#x5206;&#x6570;&#x3002;</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>&#x672C;&#x90E8;&#x5206;&#x516C;&#x5F0F;&#x5982;&#x4E0B;
+$$
+\alpha<em>{f</em>{t}}=\frac{\sum<em>{u \in S</em>{t} L<em>{p}(u) }}{\lvert S</em>{t} \rvert} \tag{16}
+$$
+$$
+\alpha<em>{v</em>{t}} = max(\alpha<em>{f</em>{t}})<em>{f</em>{t}\in Skel(v_{t})} \tag{17}
+$$</li>
+</ul>
+<hr>
+<h3 id="35-implementation-details">3.5 Implementation Details</h3>
+<ul>
+<li>&#x672C;&#x6587;&#x4F7F;&#x7528; Alpha Pose<sup><a href="#fn_4" id="reffn_4">4</a></sup>&#x8FDB;&#x884C;&#x9AA8;&#x9ABC;&#x68C0;&#x6D4B;&#x3002;</li>
+<li>&#x7ED3;&#x5408;&#x7A00;&#x758F;&#x5149;&#x6D41;&#x548C;&#x68C0;&#x6D4B;&#x5230;&#x7684;&#x9AA8;&#x9ABC;&#xFF0C;&#x5728;&#x76F8;&#x90BB;&#x7684;&#x5E27;&#x4E2D;&#xFF0C;&#x7ED9;&#x4E88;&#x6BCF;&#x5BF9;&#x9AA8;&#x9ABC;&#x76F8;&#x4F3C;&#x7684;&#x5206;&#x6570;&#xFF0C;&#x5E76;&#x4F7F;&#x7528;&#x5308;&#x7259;&#x5229;&#x7B97;&#x6CD5;&#x89E3;&#x51B3;&#x4E86;&#x5339;&#x914D;&#x95EE;&#x9898;&#x3002;&#xFF08;&#x76EE;&#x6807;&#x8FFD;&#x8E2A;&#xFF09;</li>
+<li>&#x5BF9; Gloabl &#x548C; Local &#x6807;&#x51C6;&#x5316;&#x65F6;&#xFF0C;&#x4F7F;&#x7528;&#x539F;&#x503C;&#x51CF;&#x53BB;&#x7279;&#x5F81;&#x7684;&#x4E2D;&#x503C;&#xFF0C;&#x7136;&#x540E;&#x5FFD;&#x7565;&#x6700;&#x5927;&#x548C;&#x6700;&#x5C0F;&#x7684;10%&#x7684;&#x503C;&#x8FDB;&#x884C;&#x6807;&#x51C6;&#x5316;&#xFF0C;&#x5373;&#x53D6;&#x6392;&#x5E8F;&#x540E; 10%&#x5904; &#x548C; 90%&#x5904; &#x7684;&#x503C;&#x8FDB;&#x884C;&#x6807;&#x51C6;&#x5316;&#x3002;</li>
+</ul>
+<hr>
+<h2 id="4-experiments">4 Experiments</h2>
+<h2 id="-&#x672C;&#x6587;&#x4F7F;&#x7528;&#x4E86;&#x4E24;&#x4E2A;&#x6570;&#x636E;&#x96C6;&#x8BC4;&#x4F30;&#x672C;&#x7B97;&#x6CD5;&#xFF0C;&#x5206;&#x522B;&#x662F;shanghaitech-campus&#x548C;cuhk-avenue&#x3002;&#x4ED6;&#x4EEC;&#x5728;&#x6570;&#x636E;&#x6765;&#x6E90;&#x3001;&#x89C6;&#x9891;&#x8D28;&#x91CF;&#x548C;&#x5F02;&#x5E38;&#x7C7B;&#x578B;&#x65B9;&#x9762;&#x90FD;&#x6709;&#x6240;&#x4E0D;&#x540C;&#x3002;">- &#x672C;&#x6587;&#x4F7F;&#x7528;&#x4E86;&#x4E24;&#x4E2A;&#x6570;&#x636E;&#x96C6;&#x8BC4;&#x4F30;&#x672C;&#x7B97;&#x6CD5;&#xFF0C;&#x5206;&#x522B;&#x662F;<code>ShanghaiTech Campus</code>&#x548C;<code>CUHK Avenue</code>&#x3002;&#x4ED6;&#x4EEC;&#x5728;&#x6570;&#x636E;&#x6765;&#x6E90;&#x3001;&#x89C6;&#x9891;&#x8D28;&#x91CF;&#x548C;&#x5F02;&#x5E38;&#x7C7B;&#x578B;&#x65B9;&#x9762;&#x90FD;&#x6709;&#x6240;&#x4E0D;&#x540C;&#x3002;</h2>
+<h3 id="41-shanghaitech-campus-dataset">4.1 ShanghaiTech Campus Dataset</h3>
+<ul>
+<li>&#x672C;&#x6570;&#x636E;&#x96C6;&#x88AB;&#x8BA4;&#x4E3A;&#x662F;&#x5F53;&#x65F6;&#x6700;&#x5168;&#x9762;&#x548C;&#x73B0;&#x5B9E;&#x7684;&#x89C6;&#x9891;&#x5F02;&#x5E38;&#x68C0;&#x6D4B;&#x7684;&#x6570;&#x636E;&#x96C6;&#x4E4B;&#x4E00;&#xFF0C;&#x5305;&#x542B;&#x4E0A;&#x6D77;&#x79D1;&#x6280;&#x5927;&#x5B66;13&#x4E2A;&#x6444;&#x50CF;&#x5934;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x5F02;&#x5E38;&#x7C7B;&#x578B;&#x5E7F;&#x6CDB;&#x3002;</li>
+<li>&#x5927;&#x90E8;&#x5206;&#x5F02;&#x5E38;&#x90FD;&#x4E0E;&#x4EBA;&#x76F8;&#x5173;&#xFF0C;&#x672C;&#x6587;&#x4E22;&#x5F03;&#x4E86;&#x6D4B;&#x8BD5;&#x6570;&#x636E;&#x4E2D;6&#x4E2A;&#x4E0E;&#x4EBA;&#x65E0;&#x5173;&#x7684;&#x5F02;&#x5E38;&#x89C6;&#x9891;&#xFF0C;&#x4FDD;&#x7559;&#x4E86;&#x5176;&#x4F59;101&#x4E2A;&#x4E0E;&#x4EBA;&#x76F8;&#x5173;&#x7684;&#x5F02;&#x5E38;&#x89C6;&#x9891;&#x3002;</li>
+</ul>
+<hr>
+<h4 id="411-comparison-with-appearance-based-methods">4.1.1 Comparison with Appearance-based Methods</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:center">HR-ShanghaiTech</th>
+<th style="text-align:center">ShanghaiTech</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Conv-AE</td>
+<td style="text-align:center">0.698</td>
+<td style="text-align:center">0.704</td>
+</tr>
+<tr>
+<td style="text-align:center">TSC sRNN</td>
+<td style="text-align:center">N/A</td>
+<td style="text-align:center">0.680</td>
+</tr>
+<tr>
+<td style="text-align:center">Liu et al.</td>
+<td style="text-align:center">0.727</td>
+<td style="text-align:center">0.728</td>
+</tr>
+<tr>
+<td style="text-align:center">MPED-RNN</td>
+<td style="text-align:center"><strong>0.754</strong></td>
+<td style="text-align:center"><strong>0.734</strong></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>&#x4E0A;&#x8868;&#x4E3A;&#x672C;&#x6587;&#x65B9;&#x6CD5;&#x548C;&#x5176;&#x4ED6;&#x524D;&#x6CBF;&#x65B9;&#x6CD5;&#x7684;ROC AUC&#x5BF9;&#x6BD4;&#x3002;
+<img src="https://raw.githubusercontent.com/FANSENG/Figure-bed/master/20220731235109.png" alt="|450"></li>
+<li>&#x4E0A;&#x56FE;&#x4E3A;&#x4E09;&#x4E2A;&#x65B9;&#x6CD5;&#x7684;&#x6BD4;&#x8F83;&#xFF0C;&#x53EF;&#x4EE5;&#x53D1;&#x73B0;&#x672C;&#x6587;&#x65B9;&#x6CD5;&#x53EA;&#x4E13;&#x6CE8;&#x4E8E;&#x9AA8;&#x9ABC;&#xFF0C;&#x4E0D;&#x5173;&#x6CE8;&#x5C4F;&#x5E55;&#x4E2D;&#x5176;&#x4ED6;&#x4E0E;&#x4EBA;&#x65E0;&#x5173;&#x7684;&#x4E8B;&#x52A1;&#xFF1B;&#x800C;&#x53E6;&#x5916;&#x4E24;&#x4E2A;&#x65B9;&#x6CD5;&#x5C1D;&#x8BD5;&#x5728;&#x6574;&#x4E2A;&#x5C4F;&#x5E55;&#x4E0A;&#x53BB;&#x505A;&#x5F02;&#x5E38;&#x68C0;&#x6D4B;&#xFF0C;&#x4F1A;&#x66F4;&#x5BB9;&#x6613;&#x53D7;&#x5230;&#x566A;&#x97F3;&#x7684;&#x5F71;&#x54CD;&#x3002;</li>
+</ul>
+<hr>
+<h4 id="412-interpreting-open-box-mped-rnn">4.1.2 Interpreting Open-box MPED-RNN</h4>
+<ul>
+<li>&#x5982;&#x4E0B;&#x56FE;&#x672C;&#x6587;&#x5BF9;&#x751F;&#x6210;&#x7684; $\hat{f<em>{t}^g}$ &#x548C; $\hat{f</em>{t}^l}$ &#x8FDB;&#x884C;&#x4E86;&#x53EF;&#x89C6;&#x5316;&#x5904;&#x7406;&#xFF0C;&#x5E76;&#x4E14;&#x5728;&#x539F;&#x56FE;&#x50CF;&#x7A7A;&#x95F4;&#x4E2D;&#x663E;&#x793A;&#x4E86;&#x9884;&#x6D4B;&#x7684;&#x9AA8;&#x9ABC;&#x3002;&#x7EA2;&#x8272;&#x4E3A;&#x9884;&#x6D4B;&#x9AA8;&#x9ABC;&#xFF0C;&#x9ED1;&#x8272;&#x4E3A;&#x8F93;&#x5165;&#x9AA8;&#x9ABC;&#x3002;</li>
+<li>&#x672C;&#x6570;&#x636E;&#x96C6;&#x91C7;&#x96C6;&#x81EA;&#x6821;&#x56ED;&#xFF0C;&#x4E0B;&#x65B9;Normal&#x6307;&#x7684;&#x52A8;&#x4F5C;&#x4E3A; &#x7AD9;&#x7ACB; &#x6216;&#x8005; &#x968F;&#x610F;&#x8D70; &#xFF0C;&#x50CF;&#x5954;&#x8DD1;&#x3001;&#x9A91;&#x81EA;&#x884C;&#x8F66;&#x7B49;&#x60C5;&#x51B5;&#x5BB9;&#x6613;&#x68C0;&#x6D4B;&#x4E3A;&#x5F02;&#x5E38;&#x3002;</li>
+<li>&#x5DE6;&#x4FA7;&#x4E3A;&#x6B63;&#x5E38;&#x884C;&#x8D70;&#x60C5;&#x51B5;&#x4E0B;&#x7684;&#x5BF9;&#x6BD4;&#xFF0C;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x4E24;&#x8005;&#x9AA8;&#x9ABC;&#x60C5;&#x51B5;&#x76F8;&#x4F3C;&#xFF0C;&#x4E14;&#x5168;&#x5C40;&#x68C0;&#x6D4B;&#x6846;&#x4F4D;&#x7F6E;&#x57FA;&#x672C;&#x543B;&#x5408;&#x3002;</li>
+<li>&#x53F3;&#x4FA7;&#x4E3A;&#x5954;&#x8DD1;&#x60C5;&#x51B5;&#x4E0B;&#x7684;&#x5BF9;&#x6BD4;&#xFF0C;&#x53EF;&#x4EE5;&#x89C2;&#x5BDF;&#x5230;&#x9AA8;&#x9ABC;&#x7684;&#x5DEE;&#x522B;&#x8F83;&#x5927;&#xFF0C;&#x4E14;&#x5168;&#x5C40;&#x68C0;&#x6D4B;&#x6846;&#x7684;&#x543B;&#x5408;&#x5EA6;&#x4E5F;&#x8F83;&#x5DEE;&#x3002;
+<img src="https://raw.githubusercontent.com/FANSENG/Figure-bed/master/20220731235613.png" alt=""></li>
+</ul>
+<hr>
+<h4 id="413-ablation-study">4.1.3 Ablation Study</h4>
+<p><img src="https://raw.githubusercontent.com/FANSENG/Figure-bed/master/20220801001401.png" alt="|450"></p>
+<h2 id="-&#x4E0A;&#x8868;&#x4E3A;mped-rnn&#x7684;&#x5404;&#x4E2A;&#x7B80;&#x5316;&#x53D8;&#x4F53;&#x5728;&#x6570;&#x636E;&#x96C6;&#x4E0A;&#x7684;&#x8868;&#x73B0;&#x3002;">- &#x4E0A;&#x8868;&#x4E3A;MPED-RNN&#x7684;&#x5404;&#x4E2A;&#x7B80;&#x5316;&#x53D8;&#x4F53;&#x5728;&#x6570;&#x636E;&#x96C6;&#x4E0A;&#x7684;&#x8868;&#x73B0;&#x3002;</h2>
+<h4 id="414-error-mode-analysis">4.1.4 Error Mode Analysis</h4>
+<ul>
+<li>&#x5BF9;&#x672C;&#x6A21;&#x578B;&#x4E2D;&#x8BC6;&#x522B;&#x9519;&#x8BEF;&#x7684;&#x60C5;&#x51B5;&#x8FDB;&#x884C;&#x4E86;&#x8003;&#x5BDF;&#xFF0C;&#x53D1;&#x73B0; &#x9AA8;&#x9ABC;&#x68C0;&#x6D4B;&#x548C;&#x8DDF;&#x8E2A; &#x7684;&#x9519;&#x8BEF;&#x662F;&#x8BC6;&#x522B;&#x9519;&#x8BEF;&#x7684;&#x91CD;&#x8981;&#x539F;&#x56E0;&#xFF0C;&#x9AA8;&#x9ABC;&#x68C0;&#x6D4B;&#x548C;&#x8DDF;&#x8E2A; &#x51FA;&#x9519;&#x7684;&#x539F;&#x56E0;&#x5927;&#x90E8;&#x5206;&#x662F;&#x56E0;&#x4E3A;&#x4EBA;&#x7C7B;&#x533A;&#x57DF;&#x5206;&#x8FA8;&#x7387;&#x4F4E;&#x3001;&#x7F3A;&#x4E4F;&#x5149;&#x7167;&#x3001; &#x989C;&#x8272;&#x5BF9;&#x6BD4;&#x95EE;&#x9898;&#x3001;&#x9634;&#x5F71;&#x95EE;&#x9898;&#x7B49;&#x3002;&#x5E76;&#x4E14;&#x5BF9;&#x4E8E;&#x5F88;&#x591A;&#x4EBA;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;tracking ID &#x5F88;&#x5BB9;&#x6613;&#x4E22;&#x5931;&#x6216;&#x9519;&#x8BEF;&#x5206;&#x914D;&#xFF0C;&#x8FD9;&#x4E00;&#x70B9;&#x4E5F;&#x4F1A;&#x8BEF;&#x5BFC;&#x6A21;&#x578B;&#x3002;</li>
+<li>&#x4E0B;&#x65B9;&#x4E3A;&#x9AA8;&#x9ABC;&#x68C0;&#x6D4B;&#x51FA;&#x9519;&#x7684;&#x5B9E;&#x4F8B;&#x3002;&#x5DE6;&#x8FB9;&#x8BEF;&#x8BC6;&#x522B;&#x4E86;&#x73BB;&#x7483;&#x4E2D;&#x4EBA;&#x7684;&#x5012;&#x5F71;&#xFF0C;&#x53F3;&#x8FB9;&#x8BEF;&#x5C06;&#x9A91;&#x8F66;&#x7684;&#x4EBA;&#x7684;&#x9AA8;&#x67B6;&#x8BC6;&#x522B;&#x4E3A;&#x8D70;&#x8DEF;&#x7684;&#x9AA8;&#x67B6;&#x3002;
+<img src="https://raw.githubusercontent.com/FANSENG/Figure-bed/master/20220801002204.png" alt=""></li>
+</ul>
+<hr>
+<h3 id="42-cuhk-avenue-dataset">4.2 CUHK Avenue dataset</h3>
+<ul>
+<li>&#x672C;&#x6587;&#x540C;&#x6837;&#x5728;CUHK Avenue&#x6570;&#x636E;&#x96C6;&#x4E0A;&#x8FDB;&#x884C;&#x4E86;&#x5B9E;&#x9A8C;&#xFF0C;&#x5305;&#x542B;16&#x4E2A;&#x8BAD;&#x7EC3;&#x89C6;&#x9891;&#x548C;21&#x4E2A;&#x6D4B;&#x8BD5;&#x89C6;&#x9891;&#xFF0C;&#x5747;&#x6765;&#x81EA;&#x4E00;&#x4E2A;&#x6444;&#x50CF;&#x5934;&#x3002;</li>
+<li>&#x9274;&#x4E8E;&#x5728;&#x4E0A;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x96C6;&#x7684;&#x7ECF;&#x9A8C;&#xFF0C;&#x672C;&#x6587;&#x624B;&#x52A8;&#x5BF9;&#x8F93;&#x5165;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x4E86;&#x5904;&#x7406;&#xFF0C;&#x5220;&#x9664;&#x6389;&#x4E86;&#x4E0E;&#x4EBA;&#x65E0;&#x5173;&#x7684;&#x5F02;&#x5E38;&#x3001;&#x4EBA;&#x65E0;&#x6CD5;&#x88AB;&#x68C0;&#x6D4B;&#x548C;&#x8DDF;&#x8E2A;&#x7684;&#x5E27;&#x3002;</li>
+<li>&#x5BF9;&#x6570;&#x636E;&#x7ECF;&#x8FC7;&#x5904;&#x7406;&#x540E;&#xFF0C;&#x6700;&#x540E;&#x7684; ROC AUC &#x4E3A;0.863&#x3002;</li>
+</ul>
+<hr>
+<h2 id="5-dicussion">5 Dicussion</h2>
+<ul>
+<li>&#x6BCF;&#x5E27;&#x7684;&#x9AA8;&#x9ABC;&#x7279;&#x5F81;&#x5E73;&#x5747;&#x957F;&#x5EA6;&#x5C0F;&#x4E8E;100</li>
+<li>&#x6A21;&#x5757;&#x5316;&#x4F53;&#x7CFB;&#x67B6;&#x6784;</li>
+<li>&#x4F9D;&#x8D56;&#x4E8E;&#x9AD8;&#x8D28;&#x91CF;&#x7684;&#x9AA8;&#x9ABC;&#x68C0;&#x6D4B;&#x548C;&#x8DDF;&#x8E2A;</li>
+<li>message-passing&#x65B9;&#x6848;&#x53EF;&#x4EE5;&#x6269;&#x5C55;&#x4E8E;&#x5176;&#x4ED6;&#x95EE;&#x9898;</li>
+<li>global-local&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x6269;&#x5C55;&#x4E8E;&#x5176;&#x4ED6;&#x9879;&#x76EE;&#x4E0A;</li>
+</ul>
+<hr>
+<h2 id="6-conclusion">6 Conclusion</h2>
+<ul>
+<li>MPED-RNN&#x7B80;&#x5355;&#x3001;&#x5E76;&#x4E14;&#x9AD8;&#x5EA6;&#x53EF;&#x89E3;&#x91CA;</li>
+<li>&#x7279;&#x5F81;&#x5DE5;&#x7A0B;&#x4E2D;&#x8FDB;&#x884C;&#x4E86;&#x5982;&#x4E0B;&#x5DE5;&#x4F5C;<ol>
+<li>&#x68C0;&#x67E5;&#x4EBA;&#x9645;&#x4E92;&#x52A8;&#x7684;&#x89C4;&#x5F8B;&#x6027;</li>
+<li>&#x7ED3;&#x5408;&#x9AA8;&#x9ABC;&#x7279;&#x5F81;&#x548C;&#x5916;&#x89C2;</li>
+<li>&#x5C06;&#x57FA;&#x4E8E;&#x7EC4;&#x4EF6;&#x7684;&#x6A21;&#x578B;&#x6269;&#x5C55;&#x5230;&#x975E;&#x4EBA;&#x7C7B;&#x5BF9;&#x8C61;</li>
+</ol>
+</li>
+</ul>
+<hr>
+<h2 id="notes">Notes</h2>
+<ul>
+<li>GRU&#x539F;&#x7406;&#x56FE;&#xFF1A;
+<img src="https://raw.githubusercontent.com/FANSENG/Figure-bed/master/20220802125424.png" alt=""></li>
+<li>&#x4E0E;LSTM&#x76F8;&#x6BD4;&#xFF0C;GRU&#x6709;&#x5982;&#x4E0B;&#x7279;&#x70B9;&#xFF1A;<ol>
+<li>GRU&#x76F8;&#x6BD4;&#x4E8E;LSTM&#x5C11;&#x4E86;&#x8F93;&#x51FA;&#x95E8;&#xFF0C;&#x5176;&#x53C2;&#x6570;&#x6BD4;LSTM&#x5C11;&#x3002;</li>
+<li>GRU&#x5728;&#x590D;&#x8C03;&#x97F3;&#x4E50;&#x5EFA;&#x6A21;&#x548C;&#x8BED;&#x97F3;&#x4FE1;&#x53F7;&#x5EFA;&#x6A21;&#x7B49;&#x7279;&#x5B9A;&#x4EFB;&#x52A1;&#x4E0A;&#x7684;&#x6027;&#x80FD;&#x548C;LSTM&#x5DEE;&#x4E0D;&#x591A;&#xFF0C;&#x5728;&#x67D0;&#x4E9B;&#x8F83;&#x5C0F;&#x7684;&#x6570;&#x636E;&#x96C6;&#x4E0A;&#xFF0C;GRU&#x76F8;&#x6BD4;&#x4E8E;LSTM&#x8868;&#x73B0;&#x51FA;&#x66F4;&#x597D;&#x7684;&#x6027;&#x80FD;&#x3002;</li>
+<li>LSTM&#x6BD4;GRU&#x4E25;&#x683C;&#x6765;&#x8BF4;&#x66F4;&#x5F3A;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x53EF;&#x4EE5;&#x5F88;&#x5BB9;&#x6613;&#x5730;&#x8FDB;&#x884C;&#x65E0;&#x9650;&#x8BA1;&#x6570;&#xFF0C;&#x800C;GRU&#x5374;&#x4E0D;&#x80FD;&#x3002;&#x8FD9;&#x5C31;&#x662F;GRU&#x4E0D;&#x80FD;&#x5B66;&#x4E60;&#x7B80;&#x5355;&#x8BED;&#x8A00;&#x7684;&#x539F;&#x56E0;&#xFF0C;&#x800C;&#x8FD9;&#x4E9B;&#x8BED;&#x8A00;&#x662F;LSTM&#x53EF;&#x4EE5;&#x5B66;&#x4E60;&#x7684;&#x3002;</li>
+<li>GRU&#x7F51;&#x7EDC;&#x5728;&#x9996;&#x6B21;&#x5927;&#x89C4;&#x6A21;&#x7684;&#x795E;&#x7ECF;&#x7F51;&#x7EDC;&#x673A;&#x5668;&#x7FFB;&#x8BD1;&#x7684;&#x7ED3;&#x6784;&#x53D8;&#x5316;&#x5206;&#x6790;&#x4E2D;&#xFF0C;&#x6027;&#x80FD;&#x59CB;&#x7EC8;&#x4E0D;&#x5982;LSTM&#x3002;</li>
+</ol>
+</li>
+<li>GRU&#x66F4;&#x9002;&#x5408;&#x4E8E;&#x5BF9;&#x901F;&#x5EA6;&#x8981;&#x6C42;&#x9AD8;&#xFF0C;&#x6570;&#x636E;&#x96C6;&#x8F83;&#x5C0F;&#x7684;&#x4EFB;&#x52A1;&#x4E0A;&#x3002;</li>
+</ul>
+<hr>
+<h2 id="references">References</h2>
+<p><sup><a href="#fn_1" id="reffn_1">1</a></sup>:Yong Du, Yun Fu, and Liang Wang. Representation learning of temporal dynamics for skeleton-based action recognition. IEEE Transactions on Image Processing, 25(7):3010&#x2013;3022, 2016. 2.2
+<sup><a href="#fn_2" id="reffn_2">2</a></sup>:Katerina Fragkiadaki, Sergey Levine, Panna Felsen, and Jitendra Malik. Recurrent network models for human dynamics. In IEEE International Conference on Computer Vision, pages 4346&#x2013;4354, 2015. 2.2, 3.1
+<sup><a href="#fn_3" id="reffn_3">3</a></sup>:Ruben Villegas, Jimei Yang, Yuliang Zou, Sungryull Sohn, Xunyu Lin, and Honglak Lee. Learning to generate longterm future via hierarchical prediction. In International Conference on Machine Learning, pages 3560&#x2013;3569, 2017. 2.2, 3.1
+<sup><a href="#fn_4" id="reffn_4">4</a></sup>:Hao-Shu Fang, Shuqin Xie, Yu-Wing Tai, and Cewu Lu. RMPE: Regional multi-person pose estimation. In IEEE International Conference on Computer Vision, pages 23532362, 2017. 3.5</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: AnomalyDetection">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../../深度学习/" class="navigation navigation-next " aria-label="Next page: 深度学习">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"SkeletonAnomalyDetection2019","level":"1.2.1.1","depth":3,"next":{"title":"深度学习","level":"1.3","depth":1,"path":"深度学习/README.md","ref":"深度学习/README.md","articles":[{"title":"Normalization","level":"1.3.1","depth":2,"path":"深度学习/Normalization/README.md","ref":"深度学习/Normalization/README.md","articles":[{"title":"BatchNormalization","level":"1.3.1.1","depth":3,"path":"深度学习/Normalization/BatchNormalization.md","ref":"深度学习/Normalization/BatchNormalization.md","articles":[]}]},{"title":"基础模型","level":"1.3.2","depth":2,"path":"深度学习/基础模型/README.md","ref":"深度学习/基础模型/README.md","articles":[{"title":"Transformer","level":"1.3.2.1","depth":3,"path":"深度学习/基础模型/Transformer.md","ref":"深度学习/基础模型/Transformer.md","articles":[]}]},{"title":"训练技巧","level":"1.3.3","depth":2,"path":"深度学习/训练技巧/README.md","ref":"深度学习/训练技巧/README.md","articles":[{"title":"K-fold","level":"1.3.3.1","depth":3,"path":"深度学习/训练技巧/K-fold.md","ref":"深度学习/训练技巧/K-fold.md","articles":[]}]}]},"previous":{"title":"AnomalyDetection","level":"1.2.1","depth":2,"path":"PaperNotes/AnomalyDetection/README.md","ref":"PaperNotes/AnomalyDetection/README.md","articles":[{"title":"SkeletonAnomalyDetection2019","level":"1.2.1.1","depth":3,"path":"PaperNotes/AnomalyDetection/SkeletonAnomalyDetection2019.md","ref":"PaperNotes/AnomalyDetection/SkeletonAnomalyDetection2019.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"PaperNotes/AnomalyDetection/SkeletonAnomalyDetection2019.md","mtime":"2022-08-03T23:31:39.590Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-08-12T12:43:05.309Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
